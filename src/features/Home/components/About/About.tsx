@@ -11,7 +11,7 @@ export const About: FC = () => {
       <div className={styles.about}>
         <img
           className={styles.avatar}
-          src='/icons/avatars/aboutAvatar.png'
+          src='/icons/avatars/aboutAvatar.webp'
           alt='AboutAvatar'
         />
         <div className={styles.data}>

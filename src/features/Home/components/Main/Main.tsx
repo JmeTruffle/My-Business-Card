@@ -10,7 +10,7 @@ export const Main: FC = () => {
       <div className={styles.items}>
         <img
           className={styles.avatar}
-          src='/icons/avatars/myAvatar.png'
+          src='/icons/avatars/myAvatar.webp'
           alt='Avatar'
         />
         <h1 className={styles.title}>Трюфилькин Алексей, 20лет</h1>
