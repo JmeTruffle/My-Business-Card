@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import { HeaderSocials } from '../../../../shared/components/Main/HeaderSocials/HeaderSocials'
-import { ScrollDown } from '../../../../shared/components/Main/ScrollDown/ScrollDown'
 import { Shapes } from '../../../../shared/components/Main/Shapes/Shapes'
 import { ButtonLink } from '../../../../shared/ui/ButtonLink/ButtonLink'
 import styles from './Main.module.scss'
@@ -18,7 +17,6 @@ export const Main: FC = () => {
         <span className={styles.education}>Front-End разработчик</span>
         <HeaderSocials />
         <ButtonLink href='#contacts' title='Связаться со мной' />
-        <ScrollDown />
       </div>
       <Shapes />
     </section>
