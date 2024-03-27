@@ -1,0 +1,89 @@
+@import '../../../styles/vars/properties';
+@import '../../../styles/vars/colors';
+@import '../../../styles/vars/fonts';
+@import '../../../styles/mixins/transform';
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: $borderRadius;
+  box-shadow: $shadow;
+  transition: 0.3s;
+
+  &:hover {
+    @include moveUp;
+  }
+
+  &:hover .button {
+    opacity: 1;
+  }
+
+  &:hover .mask {
+    opacity: 0.95;
+  }
+
+  &:hover .title,
+  &:hover .category {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: $card1BG;
+
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.category {
+  position: absolute;
+  display: inline-block;
+  left: 1.5rem;
+  top: 0;
+  font-size: $fontSmall;
+  color: $white;
+  padding: 0.19rem 0.625rem;
+  background-color: $main;
+  border-bottom-left-radius: 0.98rem;
+  border-bottom-right-radius: 0.98rem;
+
+  transform: translateY(-40px);
+  transition: 0.3s;
+}
+
+.title {
+  position: absolute;
+  top: 3.75rem;
+  color: $white;
+  font-size: $h3Size;
+  padding: 0 1.25rem;
+  margin: 0 0 0.98rem;
+
+  transform: translateY(30px);
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.button {
+  position: absolute;
+  display: block;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  color: $white;
+  font-size: $h3Size;
+  background-color: #ffd15c;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+
+  transition: 0.3s;
+  opacity: 0;
+}

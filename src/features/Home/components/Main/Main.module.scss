@@ -1,0 +1,32 @@
+@import '../../../../shared/styles/vars/fonts';
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.items {
+  max-width: 540px;
+  text-align: center;
+}
+
+.avatar {
+  height: 324px;
+  width: 324px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: $h1Size;
+  font-weight: $fontBold;
+  margin-bottom: 0.5rem;
+}

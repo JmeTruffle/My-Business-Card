@@ -1,0 +1,22 @@
+@import '../../../styles/vars/colors';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.75rem;
+  margin: 1rem 0;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+  color: $title;
+  transition: all 0.1s ease-in-out;
+}
+
+.icon:hover {
+  color: $main;
+  width: 32px;
+  height: 32px;
+}

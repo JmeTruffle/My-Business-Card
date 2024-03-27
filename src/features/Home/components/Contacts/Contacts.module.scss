@@ -1,0 +1,100 @@
+@import '../../../../shared/styles/vars/fonts';
+@import '../../../../shared/styles/vars/colors';
+@import '../../../../shared/styles/vars/properties';
+
+.wrapper {
+  padding-top: 7rem;
+  padding-bottom: 6.25rem;
+
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  font-size: $h1Size;
+  font-weight: $fontBold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  column-gap: 1.875rem;
+}
+
+.contactTitle {
+  font-size: $h3Size;
+  margin-bottom: 0.5rem;
+}
+
+.fromGroup {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+
+.item,
+.formMessageItem {
+  position: relative;
+  margin-bottom: 1.875rem;
+  height: 3.75rem;
+}
+
+.formInput,
+.formMessage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: $shadow;
+  background-color: $white;
+  color: $text;
+  border: none;
+  outline: none;
+  border-radius: $borderRadius;
+  padding: 0.625rem 1.875rem;
+  z-index: 1;
+}
+
+.formMessageItem {
+  height: 10.25rem;
+}
+
+.formMessage {
+  resize: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 300px 360px;
+    justify-content: center;
+  }
+
+  .fromGroup {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 310px;
+    row-gap: 1.875rem;
+  }
+
+  .info {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,47 @@
+@import '../../../../shared/styles/vars/fonts';
+
+.wrapper {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  font-size: $h1Size;
+  font-weight: $fontBold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.875rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .data {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .data {
+    grid-template-columns: 310px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .data {
+    grid-template-columns: 1fr;
+  }
+}

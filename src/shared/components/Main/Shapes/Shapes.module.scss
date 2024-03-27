@@ -1,0 +1,67 @@
+.wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10000;
+}
+
+.shape {
+  position: absolute;
+}
+
+.s1 {
+  left: 2%;
+  top: 10%;
+}
+
+.s2 {
+  left: 18%;
+  top: 30%;
+}
+
+.s3 {
+  left: 5%;
+  bottom: 30%;
+}
+
+.s4 {
+  left: 2%;
+  bottom: 10%;
+}
+
+.s5 {
+  left: 44%;
+  top: 10%;
+}
+
+.s6 {
+  left: 36%;
+  bottom: 10%;
+}
+
+.s7 {
+  right: 25%;
+  top: 20%;
+}
+
+.s8 {
+  right: 24%;
+  bottom: 20%;
+}
+
+.s9 {
+  right: 2%;
+  top: 10%;
+}
+
+.s10 {
+  right: 11%;
+  top: 45%;
+}
+
+.s11 {
+  right: 2%;
+  bottom: 10%;
+}

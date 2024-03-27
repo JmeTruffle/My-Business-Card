@@ -1,0 +1,73 @@
+@import '../../../../shared/styles/vars/colors';
+@import '../../../../shared/styles/vars/fonts';
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $body;
+  border-right: 1px solid $border;
+  padding: 2.5rem;
+  width: 110px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  z-index: 10;
+}
+
+.navLogo {
+  height: 52px;
+  width: 52px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-left: 0.375rem;
+}
+
+.copyright {
+  color: $gray;
+  font-size: $fontSmall;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+}
+
+.toggle {
+  position: fixed;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 1.25rem;
+  left: 1.875rem;
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+  background-color: $body;
+  border: 1px solid $sidebarBorder;
+  border-radius: 0.625rem;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    left: -110px;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .toggleOpen {
+    left: 140px;
+  }
+
+  .showMenu {
+    left: 0;
+  }
+}

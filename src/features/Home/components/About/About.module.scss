@@ -1,0 +1,119 @@
+@import '../../../../shared/styles/vars/fonts';
+@import '../../../../shared/styles/vars/colors';
+@import '../../../../shared/styles/vars/properties';
+
+.wrapper {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  font-size: $h1Size;
+  font-weight: $fontBold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+  column-gap: 1.875rem;
+}
+
+.avatar {
+  width: 100%;
+  max-width: 256px;
+  height: 256px;
+  object-fit: cover;
+}
+
+.data {
+  position: relative;
+  display: grid;
+  padding: 1.875rem;
+  background-color: $white;
+  box-shadow: $shadow;
+  border-radius: $borderRadius;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.875rem;
+  align-items: flex-start;
+}
+
+.data::before {
+  position: absolute;
+  left: -0.93rem;
+  top: 20%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid $white;
+  content: '';
+}
+
+.description {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.skills {
+  display: grid;
+  row-gap: 1.25rem;
+}
+
+.development {
+  width: 80%;
+  background-color: $developmentBar;
+}
+
+.optimization {
+  width: 95%;
+  background-color: $optimizationBar;
+}
+
+.design {
+  width: 75%;
+  background-color: $designBar;
+}
+
+@media screen and (max-width: 1150px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.875rem;
+    padding-right: 1.725rem;
+    padding-left: 1.725rem;
+  }
+
+  .data::before {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+    left: 49%;
+    top: -20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    grid-template-columns: 350px;
+  }
+
+  .data {
+    grid-template-columns: 1fr;
+    row-gap: 1.875rem;
+  }
+
+  .data::before {
+    left: 47%;
+  }
+}

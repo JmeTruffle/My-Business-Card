@@ -1,0 +1,45 @@
+@import '../../../shared/styles/vars/properties';
+@import '../../../shared/styles/vars/colors';
+@import '../../../shared/styles/vars/fonts';
+@import '../../../shared/styles/mixins/transform';
+
+.card {
+  text-align: center;
+  padding: 1.875rem;
+  border-radius: $borderRadius;
+  background-color: $white;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    @include moveUp;
+  }
+}
+
+.image {
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-size: $h3Size;
+  margin-bottom: 1rem;
+  color: $white;
+}
+
+.description {
+  color: $cardDescription;
+}
+
+.card:nth-child(1) {
+  background-color: $card1BG;
+  box-shadow: 0px 5px 20px 0px $card1BG;
+}
+
+.card:nth-child(2) {
+  background-color: $card2BG;
+  box-shadow: 0px 5px 20px 0px $card2BG;
+}
+
+.card:nth-child(3) {
+  background-color: $card3BG;
+  box-shadow: 0px 5px 20px 0px $card3BG;
+}

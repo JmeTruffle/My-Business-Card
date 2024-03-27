@@ -1,0 +1,80 @@
+@import '../../../../shared/styles/vars/fonts';
+@import '../../../../shared/styles/vars/colors';
+
+.wrapper {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  font-size: $h1Size;
+  font-weight: $fontBold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 1.875rem;
+  margin-bottom: 2.5rem;
+}
+
+.item {
+  cursor: pointer;
+  font-weight: $fontBold;
+  transition: 0.1s;
+
+  &:hover {
+    color: $main;
+  }
+}
+
+.container {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 330px);
+    justify-content: center;
+    row-gap: 1.875rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .filters {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 330px;
+  }
+
+  .filters {
+    row-gap: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

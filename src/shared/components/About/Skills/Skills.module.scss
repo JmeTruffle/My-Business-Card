@@ -1,0 +1,31 @@
+@import '../../../../shared/styles/vars/fonts';
+@import '../../../../shared/styles/vars/colors';
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: $fontBold;
+  font-weight: $fontMedium;
+}
+
+.number {
+  line-height: 1.2;
+}
+
+.bar,
+.percentage {
+  height: 7px;
+  border-radius: 0.25rem;
+}
+
+.bar {
+  background-color: $barBG;
+}
+
+.percentage {
+  display: block;
+}

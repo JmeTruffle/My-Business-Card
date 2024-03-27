@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.35rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .wrapper {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,62 @@
+@import '../../shared//styles/vars/fonts';
+@import '../../shared//styles/vars/colors';
+
+@media screen and (max-width: 1024px) {
+  $h1Size: 1.75rem;
+  $h2Size: 1.25rem;
+  $h3Size: 1rem;
+  $fontNormal: 0.938rem;
+  $fontSmall: 0.813rem;
+  $fontSmaller: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: $fontNormal;
+}
+
+body {
+  background-color: $body;
+  line-height: 1.7;
+  color: $text;
+}
+
+h1,
+h2,
+h3 {
+  color: $title;
+  font-weight: $fontSemibold;
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}

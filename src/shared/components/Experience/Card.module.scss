@@ -1,0 +1,57 @@
+@import '../../../shared/styles/vars/colors';
+@import '../../../shared/styles/vars/fonts';
+
+.item {
+  position: relative;
+  padding-left: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.item:last-child {
+  padding-bottom: 0;
+}
+
+.item::before {
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: $main;
+  content: '';
+}
+
+.icon {
+  position: absolute;
+  left: -0.435rem;
+  top: 0;
+  font-size: $h2Size;
+  color: $main;
+  background-color: $white;
+  padding: 0.4375rem 0;
+}
+
+.year {
+  color: #8b88b1;
+  font-size: $fontSmall;
+}
+
+.title {
+  font-size: $h3Size;
+  margin: 0.5rem;
+}
+
+@media screen and (max-width: 350px) {
+  .item {
+    padding-left: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+
+  .item::before {
+    left: 0;
+  }
+
+  .description {
+    text-align: justify;
+  }
+}
