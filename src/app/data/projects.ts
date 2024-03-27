@@ -11,7 +11,7 @@ export const projects = [
     id: 2,
     image: '/icons/portfolio/truffBank.png',
     title:
-      'Рабочая копия Тинькофф Банка с транзакциями, красивым UI, просмотром валют и тд.',
+      'Копия Тинькофф Банка с транзакциями, красивым UI, просмотром валют и тд.',
     category: 'React Native',
     href: 'https://truff-bank.vercel.app',
   },

@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { services } from '../../../../app/data/services'
-import { Card } from '../../../../shared/components/Services/Card'
+import { Card } from '../../../../shared/components/Services/Card/Card'
 import styles from './Services.module.scss'
 
 export const Services: FC = () => {

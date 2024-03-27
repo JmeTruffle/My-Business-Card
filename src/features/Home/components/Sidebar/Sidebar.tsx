@@ -1,6 +1,6 @@
 import { FC, useState } from 'react'
 import { sidebarIcons } from '../../../../app/data/sidebarIcons'
-import { Item } from '../../../../shared/components/Sidebar/Item'
+import { Item } from '../../../../shared/components/Sidebar/Item/Item'
 import styles from './Sidebar.module.scss'
 
 export const Sidebar: FC = () => {

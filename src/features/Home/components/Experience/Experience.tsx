@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { experience } from '../../../../app/data/experience'
-import { Card } from '../../../../shared/components/Experience/Card'
+import { Card } from '../../../../shared/components/Experience/Card/Card'
 import styles from './Experience.module.scss'
 
 export const Experience: FC = () => {
