@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import { About } from '../../features/Home/components/About/About'
 import { Contacts } from '../../features/Home/components/Contacts/Contacts'
 import { Experience } from '../../features/Home/components/Experience/Experience'

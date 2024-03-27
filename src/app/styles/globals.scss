@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 @media screen and (max-width: 1024px) {
   $h1Size: 1.75rem;
   $h2Size: 1.25rem;
@@ -11,6 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: $fontMain;
 }
 
 html {

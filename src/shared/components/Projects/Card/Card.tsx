@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import styles from './Card.module.scss'
 
 interface CardProps {
@@ -13,12 +14,17 @@ export const Card: FC<CardProps> = ({ title, image, category, href }) => {
     <div className={styles.card}>
       <div className={styles.thumbnail}>
         <img className={styles.image} src={image} alt={title} />
-        <div className={styles.mask}></div>
+        <div className={styles.mask} />
       </div>
       <span className={styles.category}>{category}</span>
       <h3 className={styles.title}>{title}</h3>
-      <a href={href} target='_blank' className={styles.button}>
-        <i className='icon-link'></i>
+      <a
+        href={href}
+        target='_blank'
+        className={styles.button}
+        rel='noopener noreferrer'
+      >
+        <i className='icon-link' />
       </a>
     </div>
   )

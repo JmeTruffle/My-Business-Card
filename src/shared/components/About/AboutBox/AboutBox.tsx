@@ -2,6 +2,7 @@ import { FC } from 'react'
 import { AiOutlineFire } from 'react-icons/ai'
 import { GoPeople } from 'react-icons/go'
 import { PiCoffeeLight } from 'react-icons/pi'
+
 import styles from './AboutBox.module.scss'
 import { Box } from './Box/Box'
 

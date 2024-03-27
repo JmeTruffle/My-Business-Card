@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import { HeaderSocials } from '../../../../shared/components/Main/HeaderSocials/HeaderSocials'
 import { Shapes } from '../../../../shared/components/Main/Shapes/Shapes'
 import { ButtonLink } from '../../../../shared/ui/ButtonLink/ButtonLink'

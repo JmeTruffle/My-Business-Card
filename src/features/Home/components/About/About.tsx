@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import { AboutBox } from '../../../../shared/components/About/AboutBox/AboutBox'
 import { Skills } from '../../../../shared/components/About/Skills/Skills'
 import { ButtonLink } from '../../../../shared/ui/ButtonLink/ButtonLink'

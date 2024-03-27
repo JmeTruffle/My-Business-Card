@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import styles from './Skills.module.scss'
 
 interface SkillsProps {
@@ -15,7 +16,7 @@ export const Skills: FC<SkillsProps> = ({ name, number, style }) => {
         <span className={styles.number}>{number}</span>
       </div>
       <div className={styles.bar}>
-        <span className={`${styles.percentage} ${style}`}></span>
+        <span className={`${styles.percentage} ${style}`} />
       </div>
     </div>
   )

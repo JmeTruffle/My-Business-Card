@@ -1,4 +1,5 @@
 import { FC, useState } from 'react'
+
 import { projects, titles } from '../../../../app/data/projects'
 import { Card } from '../../../../shared/components/Projects/Card/Card'
 import styles from './Projects.module.scss'

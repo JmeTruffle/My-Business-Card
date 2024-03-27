@@ -3,6 +3,7 @@ import { FaInstagram } from 'react-icons/fa6'
 import { FiGithub } from 'react-icons/fi'
 import { LiaTelegramPlane } from 'react-icons/lia'
 import { RxDiscordLogo } from 'react-icons/rx'
+
 import {
   myDiscord,
   myGithub,

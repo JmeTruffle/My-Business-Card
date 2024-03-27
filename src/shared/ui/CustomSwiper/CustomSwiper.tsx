@@ -1,9 +1,10 @@
-import React, { FC, PropsWithChildren } from 'react'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import './CustomSwiper.css'
+
+import React, { FC, PropsWithChildren } from 'react'
 import { Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import './CustomSwiper.css'
 
 interface SwiperProps {
   styles?: string

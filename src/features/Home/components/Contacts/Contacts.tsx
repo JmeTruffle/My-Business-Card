@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import buttonSubmit from '../../../../shared/ui/ButtonLink/ButtonLink.module.scss'
 import styles from './Contacts.module.scss'
 
@@ -48,7 +49,7 @@ export const Contacts: FC = () => {
               rows={10}
               placeholder='Сообщение...'
               className={styles.formMessage}
-            ></textarea>
+            />
           </div>
           <button type='submit' className={buttonSubmit.button}>
             Отправить

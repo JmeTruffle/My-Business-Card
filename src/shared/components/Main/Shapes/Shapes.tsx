@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import styles from './Shapes.module.scss'
 
 export const Shapes: FC = () => {

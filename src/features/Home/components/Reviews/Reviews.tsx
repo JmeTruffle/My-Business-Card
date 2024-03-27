@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import { reviews } from '../../../../app/data/reviews'
 import { Item } from '../../../../shared/components/Reviews/Item/Item'
 import { CustomSwiper } from '../../../../shared/ui/CustomSwiper/CustomSwiper'
@@ -9,12 +10,12 @@ export const Reviews: FC = () => {
     <section className={styles.wrapper} id='reviews'>
       <h2 className={styles.title}>Отзывы</h2>
       <CustomSwiper
+        loop
+        grabCursor
         styles={styles.reviews}
         spaceBetween={30}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        loop={true}
-        grabCursor={true}
       >
         {reviews.map(item => {
           return (
