@@ -1,0 +1,25 @@
+.wrapper {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+
+  max-width: 1080px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  position: relative;
+  font-size: $h1Size;
+  font-weight: $fontBold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.75rem;
+  text-align: center;
+}
+
+.reviews {
+  display: grid;
+  max-width: 700px;
+  margin: auto;
+}

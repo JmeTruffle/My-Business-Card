@@ -26,6 +26,11 @@ export const sidebarIcons = [
   },
   {
     id: 6,
+    href: '#reviews',
+    iconName: 'icon-star',
+  },
+  {
+    id: 7,
     href: '#contacts',
     iconName: 'icon-bubble',
   },
