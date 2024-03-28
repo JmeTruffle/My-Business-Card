@@ -32,17 +32,17 @@
   box-shadow: $shadow;
   border-radius: $borderRadius;
   margin-bottom: 2.25rem;
-}
 
-.review::before {
-  position: absolute;
-  left: 49.5%;
-  top: -0.625rem;
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid $white;
-  transform: translateX(-7.5px);
-  content: '';
+  &::before {
+    position: absolute;
+    left: 49.5%;
+    top: -0.625rem;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid $white;
+    transform: translateX(-7.5px);
+    content: '';
+  }
 }

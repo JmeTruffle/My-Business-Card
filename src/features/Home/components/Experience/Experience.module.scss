@@ -38,7 +38,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@include mobileBiggest {
   .experience {
     grid-template-columns: 450px;
     justify-content: center;
@@ -46,7 +46,7 @@
   }
 }
 
-@media screen and (max-width: 576px) {
+@include mobileSmall {
   .experience {
     grid-template-columns: 1fr;
     padding-left: 1.725rem;

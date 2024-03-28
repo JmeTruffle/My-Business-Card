@@ -41,7 +41,6 @@
   justify-content: center;
   top: 1.25rem;
   left: 1.875rem;
-  cursor: pointer;
   height: 40px;
   width: 45px;
   background-color: $body;
@@ -49,9 +48,10 @@
   border-radius: 0.625rem;
   transition: 0.3s;
   z-index: 1;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@include mobileBiggest {
   .wrapper {
     left: -110px;
   }

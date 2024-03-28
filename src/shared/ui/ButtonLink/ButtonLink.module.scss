@@ -8,8 +8,8 @@
   display: inline-block;
   background-color: $main;
   font-weight: $fontBold;
-}
 
-.button:hover {
-  animation: buttonPush 0.3s linear 1;
+  &:hover {
+    animation: buttonPush 0.3s linear 1;
+  }
 }

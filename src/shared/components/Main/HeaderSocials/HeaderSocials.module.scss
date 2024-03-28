@@ -11,10 +11,10 @@
   height: 26px;
   color: $title;
   transition: all 0.1s ease-in-out;
-}
 
-.icon:hover {
-  color: $main;
-  width: 32px;
-  height: 32px;
+  &:hover {
+    color: $main;
+    width: 32px;
+    height: 32px;
+  }
 }

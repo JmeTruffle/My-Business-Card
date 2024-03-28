@@ -67,7 +67,7 @@
   resize: none;
 }
 
-@media screen and (max-width: 1024px) {
+@include mobileBiggest {
   .container {
     grid-template-columns: 300px 360px;
     justify-content: center;
@@ -78,7 +78,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mobileBig {
   .container {
     grid-template-columns: 310px;
     row-gap: 1.875rem;
@@ -89,7 +89,7 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@include mobileSmallest {
   .container {
     grid-template-columns: 1fr;
   }

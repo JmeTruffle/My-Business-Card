@@ -41,18 +41,18 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
   align-items: flex-start;
-}
 
-.data::before {
-  position: absolute;
-  left: -0.93rem;
-  top: 20%;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 15px solid $white;
-  content: '';
+  &::before {
+    position: absolute;
+    left: -0.93rem;
+    top: 20%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid $white;
+    content: '';
+  }
 }
 
 .description {
@@ -80,7 +80,7 @@
   background-color: $designBar;
 }
 
-@media screen and (max-width: 1150px) {
+@include mobileLarge {
   .about {
     display: flex;
     flex-direction: column;
@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mobileBig {
   .about {
     grid-template-columns: 350px;
   }
@@ -107,9 +107,9 @@
   .data {
     grid-template-columns: 1fr;
     row-gap: 1.875rem;
-  }
 
-  .data::before {
-    left: 47%;
+    &::before {
+      left: 47%;
+    }
   }
 }

@@ -5,28 +5,28 @@
   margin-top: 4.35rem;
 }
 
-@media screen and (max-width: 1150px) {
+@include mobileLarge {
   .wrapper {
     padding-right: 5rem;
     padding-left: 5rem;
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mobileBig {
   .wrapper {
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
 
-@media screen and (max-width: 480px) {
+@include mobileSmaller {
   .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 150px);
   }
 }
 
-@media screen and (max-width: 350px) {
+@include mobileSmallest {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;

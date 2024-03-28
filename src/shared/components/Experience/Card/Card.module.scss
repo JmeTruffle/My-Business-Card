@@ -2,20 +2,20 @@
   position: relative;
   padding-left: 3.125rem;
   padding-bottom: 3.125rem;
-}
 
-.item:last-child {
-  padding-bottom: 0;
-}
+  &:last-child {
+    padding-bottom: 0;
+  }
 
-.item::before {
-  position: absolute;
-  left: 0.25rem;
-  top: 0;
-  height: 100%;
-  width: 1px;
-  background-color: $main;
-  content: '';
+  &::before {
+    position: absolute;
+    left: 0.25rem;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background-color: $main;
+    content: '';
+  }
 }
 
 .icon {
@@ -38,14 +38,14 @@
   margin: 0.5rem;
 }
 
-@media screen and (max-width: 350px) {
+@include mobileSmallest {
   .item {
     padding-left: 1.875rem;
     padding-bottom: 1.875rem;
-  }
 
-  .item::before {
-    left: 0;
+    &::before {
+      left: 0;
+    }
   }
 
   .description {

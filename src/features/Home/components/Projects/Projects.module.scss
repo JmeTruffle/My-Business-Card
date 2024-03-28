@@ -46,7 +46,7 @@
   gap: 1.875rem;
 }
 
-@media screen and (max-width: 1200px) {
+@include mobileLarge {
   .container {
     grid-template-columns: repeat(2, 330px);
     justify-content: center;
@@ -54,13 +54,13 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@include mobileBiggest {
   .filters {
     justify-content: center;
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mobileBig {
   .container {
     grid-template-columns: 330px;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@include mobileSmallest {
   .container {
     grid-template-columns: 1fr;
   }

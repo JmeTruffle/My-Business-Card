@@ -24,7 +24,7 @@
   column-gap: 1.875rem;
 }
 
-@media screen and (max-width: 1024px) {
+@include mobileBiggest {
   .data {
     grid-template-columns: repeat(2, 330px);
     justify-content: center;
@@ -32,13 +32,13 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include mobileBig {
   .data {
     grid-template-columns: 310px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@include mobileSmallest {
   .data {
     grid-template-columns: 1fr;
   }

@@ -1,0 +1,35 @@
+@mixin mobileLarge {
+  @media (max-width: $bpXXL) {
+    @content;
+  }
+}
+
+@mixin mobileBiggest {
+  @media (max-width: $bpXL) {
+    @content;
+  }
+}
+
+@mixin mobileBig {
+  @media (max-width: $bpL) {
+    @content;
+  }
+}
+
+@mixin mobileSmall {
+  @media (max-width: $bpM) {
+    @content;
+  }
+}
+
+@mixin mobileSmaller {
+  @media (max-width: $bpS) {
+    @content;
+  }
+}
+
+@mixin mobileSmallest {
+  @media (max-width: $bpXS) {
+    @content;
+  }
+}

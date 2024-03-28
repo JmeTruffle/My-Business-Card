@@ -8,9 +8,9 @@
   color: $title;
   font-weight: $fontBold;
   transition: 0.1s;
-}
 
-.link:hover {
-  font-size: 1.875rem;
-  color: $main;
+  &:hover {
+    font-size: 1.875rem;
+    color: $main;
+  }
 }

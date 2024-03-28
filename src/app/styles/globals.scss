@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-@media screen and (max-width: 1024px) {
-  $h1Size: 1.75rem;
-  $h2Size: 1.25rem;
-  $h3Size: 1rem;
-  $fontNormal: 0.938rem;
-  $fontSmall: 0.813rem;
-  $fontSmaller: 0.75rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -59,4 +50,13 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+@include mobileBiggest {
+  $h1Size: 1.75rem;
+  $h2Size: 1.25rem;
+  $h3Size: 1rem;
+  $fontNormal: 0.938rem;
+  $fontSmall: 0.813rem;
+  $fontSmaller: 0.75rem;
 }
