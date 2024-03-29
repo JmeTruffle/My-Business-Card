@@ -5,11 +5,12 @@ import styles from './ButtonLink.module.scss'
 interface ButtonLinkProps {
   title: string
   href: string
+  download?: string
 }
 
-export const ButtonLink: FC<ButtonLinkProps> = ({ href, title }) => {
+export const ButtonLink: FC<ButtonLinkProps> = ({ href, title, download }) => {
   return (
-    <a href={href} className={styles.button}>
+    <a download={download} href={href} className={styles.button}>
       {title}
     </a>
   )

@@ -1,5 +1,6 @@
 import { FC } from 'react'
 
+import { myResumePDF } from '../../../../app/data/files'
 import { AboutBox } from '../../../../shared/components/About/AboutBox/AboutBox'
 import { Skills } from '../../../../shared/components/About/Skills/Skills'
 import { ButtonLink } from '../../../../shared/ui/ButtonLink/ButtonLink'
@@ -23,7 +24,11 @@ export const About: FC = () => {
               портфолио отличается множеством успешно реализованных проектов,
               подчеркивающих мои навыки в области веб-разработки.
             </p>
-            <ButtonLink href='' title='Скачать резюме' />
+            <ButtonLink
+              download='Резюме Трюфилькин Алексей'
+              href={myResumePDF}
+              title='Скачать резюме'
+            />
           </div>
           <div className={styles.skills}>
             <Skills
