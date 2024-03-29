@@ -25,7 +25,7 @@ export const About: FC = () => {
               подчеркивающих мои навыки в области веб-разработки.
             </p>
             <ButtonLink
-              download='Резюме Трюфилькин Алексей'
+              download='downloadResume'
               href={myResumePDF}
               title='Скачать резюме'
             />
