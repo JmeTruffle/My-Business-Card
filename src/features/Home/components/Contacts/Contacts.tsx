@@ -7,7 +7,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import buttonSubmit from '../../../../shared/ui/ButtonLink/ButtonLink.module.scss'
 import styles from './Contacts.module.scss'
 
-export interface FormFields {
+interface FormFields {
   name: string
   email: string
   subject: string
@@ -18,6 +18,8 @@ export const Contacts: FC<FormFields> = () => {
   const { handleSubmit, register } = useForm<FormFields>()
 
   const onSubmit: SubmitHandler<FormFields> = useCallback(async data => {
+    console.log(data)
+
     return toast.success('Сообщение отправлено')
   }, [])
 
