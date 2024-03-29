@@ -14,7 +14,7 @@ interface FormFields {
   message: string
 }
 
-export const Contacts: FC<FormFields> = () => {
+export const Contacts: FC = () => {
   const { handleSubmit, register } = useForm<FormFields>()
 
   const onSubmit: SubmitHandler<FormFields> = useCallback(async data => {
