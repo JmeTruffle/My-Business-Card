@@ -52,6 +52,19 @@ img {
   vertical-align: middle;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $scrollbarBG;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main;
+  border-radius: $borderRadius;
+}
+
 @include mobileBiggest {
   $h1Size: 1.75rem;
   $h2Size: 1.25rem;
