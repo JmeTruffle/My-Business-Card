@@ -1,27 +1,35 @@
 import 'react-toastify/dist/ReactToastify.css'
 
-import { FC, useCallback } from 'react'
-import { SubmitHandler, useForm } from 'react-hook-form'
+import emailjs from '@emailjs/browser'
+import { FC, FormEvent, useRef } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 
 import buttonSubmit from '../../../../shared/ui/ButtonLink/ButtonLink.module.scss'
 import styles from './Contacts.module.scss'
 
-interface FormFields {
-  name: string
-  email: string
-  subject: string
-  message: string
-}
-
 export const Contacts: FC = () => {
-  const { handleSubmit, register } = useForm<FormFields>()
+  const form = useRef<HTMLFormElement>(null)
 
-  const onSubmit: SubmitHandler<FormFields> = useCallback(async data => {
-    console.log(data)
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
 
-    return toast.success('Сообщение отправлено')
-  }, [])
+    if (form.current) {
+      emailjs
+        .sendForm('service_t5xx8pm', 'template_2avy0eh', form.current, {
+          publicKey: 'lo0dCovE3KKlTVJKX',
+        })
+        .then(
+          () => {
+            toast.success('Сообщение отправлено')
+          },
+          error => {
+            toast.success('Сообщение не отправлено')
+          },
+        )
+    }
+
+    e.currentTarget.reset()
+  }
 
   return (
     <section className={styles.wrapper} id='contacts'>
@@ -36,45 +44,47 @@ export const Contacts: FC = () => {
             возможных вариантов сотрудничества или предложений.
           </p>
         </div>
-        <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+        <form ref={form} className={styles.form} onSubmit={sendEmail}>
           <div className={styles.fromGroup}>
             <div className={styles.item}>
               <input
+                required
+                className={styles.formInput}
                 type='text'
                 id='name'
-                className={styles.formInput}
+                name='user_name'
                 placeholder='Имя'
-                {...register('name', { required: 'Поле обязательно' })}
               />
             </div>
             <div className={styles.item}>
               <input
+                required
+                className={styles.formInput}
                 type='email'
                 id='email'
-                autoComplete='username'
-                className={styles.formInput}
+                name='user_email'
                 placeholder='Почта'
-                {...register('email', { required: 'Поле обязательно' })}
               />
             </div>
           </div>
           <div className={styles.item}>
             <input
+              required
+              className={styles.formInput}
               type='text'
               id='subject'
-              className={styles.formInput}
+              name='subject'
               placeholder='Тема'
-              {...register('subject', { required: 'Поле обязательно' })}
             />
           </div>
           <div className={styles.formMessageItem}>
             <textarea
-              id='message'
+              required
+              className={styles.formMessage}
+              name='message'
+              placeholder='Сообщение...'
               cols={30}
               rows={10}
-              placeholder='Сообщение...'
-              {...register('message', { required: 'Поле обязательно' })}
-              className={styles.formMessage}
             />
           </div>
           <button type='submit' className={buttonSubmit.button}>
