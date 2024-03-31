@@ -22,8 +22,8 @@ export const Contacts: FC = () => {
           () => {
             toast.success('Сообщение отправлено')
           },
-          error => {
-            toast.success('Сообщение не отправлено')
+          () => {
+            toast.error('Сообщение не отправлено')
           },
         )
     }
