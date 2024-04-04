@@ -9,7 +9,7 @@
     @include moveUp;
   }
 
-  &:hover .button {
+  &:hover .links {
     opacity: 1;
   }
 
@@ -65,20 +65,35 @@
   opacity: 0;
 }
 
-.button {
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.site,
+.github {
   position: absolute;
   display: block;
-  left: 1.5rem;
   bottom: 1.5rem;
   color: $white;
   font-size: $h3Size;
-  background-color: #ffd15c;
   height: 40px;
   width: 40px;
   border-radius: 50%;
   text-align: center;
   line-height: 42px;
+}
 
-  transition: 0.3s;
-  opacity: 0;
+.site {
+  left: 1.5rem;
+  background-color: $linkSite;
+}
+
+.github {
+  right: 1.5rem;
+  background-color: $linkGitHub;
 }

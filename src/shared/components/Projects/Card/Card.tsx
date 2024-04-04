@@ -6,10 +6,17 @@ interface CardProps {
   title: string
   image: string
   category: string
-  href: string
+  linkSite: string
+  linkGitHub: string
 }
 
-export const Card: FC<CardProps> = ({ title, image, category, href }) => {
+export const Card: FC<CardProps> = ({
+  title,
+  image,
+  category,
+  linkSite,
+  linkGitHub,
+}) => {
   return (
     <div className={styles.card}>
       <div className={styles.thumbnail}>
@@ -18,14 +25,28 @@ export const Card: FC<CardProps> = ({ title, image, category, href }) => {
       </div>
       <span className={styles.category}>{category}</span>
       <h3 className={styles.title}>{title}</h3>
-      <a
-        href={href}
-        target='_blank'
-        className={styles.button}
-        rel='noopener noreferrer'
-      >
-        <i className='icon-link' />
-      </a>
+      <div className={styles.links}>
+        {linkSite ? (
+          <a
+            href={linkSite}
+            target='_blank'
+            className={styles.site}
+            rel='noreferrer'
+          >
+            <i className='icon-link' />
+          </a>
+        ) : null}
+        {linkGitHub ? (
+          <a
+            href={linkGitHub}
+            target='_blank'
+            className={styles.github}
+            rel='noreferrer'
+          >
+            <i className='icon-social-github' />
+          </a>
+        ) : null}
+      </div>
     </div>
   )
 }

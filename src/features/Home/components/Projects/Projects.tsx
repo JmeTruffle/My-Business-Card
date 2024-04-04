@@ -9,7 +9,8 @@ interface MenuItems {
   title: string
   image: string
   category: string
-  href: string
+  linkSite: string
+  linkGitHub: string
 }
 
 export const Projects: FC = () => {
@@ -50,7 +51,8 @@ export const Projects: FC = () => {
               title={item.title}
               image={item.image}
               category={item.category}
-              href={item.href}
+              linkSite={item.linkSite}
+              linkGitHub={item.linkGitHub}
             />
           )
         })}

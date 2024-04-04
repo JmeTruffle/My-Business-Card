@@ -15,7 +15,7 @@ export const Main: FC = () => {
           alt='Avatar'
         />
         <h1 className={styles.title}>Трюфилькин Алексей, 20лет</h1>
-        <span className={styles.education}>Front-End разработчик</span>
+        <span className={styles.education}>Frontend разработчик</span>
         <HeaderSocials />
         <ButtonLink href='#contacts' title='Связаться со мной' />
       </div>
