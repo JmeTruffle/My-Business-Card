@@ -7,9 +7,21 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:react/recommended',
   ],
-  ignorePatterns: ['dist', '*.cjs', '*.d.ts', '*.mjs', 'vite.config.ts'],
+  ignorePatterns: [
+    'dist',
+    '*.cjs',
+    '*.d.ts',
+    '*.mjs',
+    'vite.config.ts',
+    'service-worker.js',
+  ],
   parser: '@typescript-eslint/parser',
-  plugins: ['react-refresh', 'import', 'simple-import-sort', 'unused-imports'],
+  plugins: [
+    'react-refresh',
+    'import',
+    'simple-import-sort',
+    'unused-imports',
+  ],
   parserOptions: {
     project: './tsconfig.json',
     sourceType: 'module',
@@ -50,7 +62,10 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     // typescript
-    '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
+    '@typescript-eslint/consistent-type-definitions': [
+      'warn',
+      'interface',
+    ],
     '@typescript-eslint/return-await': ['error', 'in-try-catch'],
     '@typescript-eslint/indent': ['warn', 2],
     '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
